@@ -16,13 +16,4 @@ This folder contains **four individually reorganized Jupyter notebooks** for the
 - Install packages: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`, `scikit-learn`, `statsmodels`, `pycytominer` and upstream helper dependencies.
 - **These notebooks have been syntax-checked, but have not been run on the original experimental data.** Exact numeric equivalence to the original results has not yet been verified.
 
-## Changes that require scientific review
 
-- Original Notebook 02 contained competing normalizations; only the user-confirmed negative-control version remains. Verify that the CSV used for manuscript figures was generated from that branch.
-- Original Notebook 03 had multiple plotting versions and conflicting cluster-to-class mappings. A transparent contingency matrix replaces those mappings; this may not reproduce the old confusion-matrix appearance.
-- Original Notebook 03 had inconsistent LDA feature-vector calculations; the curated ranking uses `lda.scalings_` and must be compared with the manuscript figure before final publication.
-- Notebook 04 retains the original unadjusted Welch p-value summary and substring-based category membership. Categories can overlap; scores should not be described as effect sizes.
-- Notebook 04 retains the selected individual-feature list, including two `Object_Number` variables that require checking against CellProfiler measurement definitions.
-- Group-level analyses are based on well-level observations. Biological replication and the appropriate statistical unit should be checked against the study design.
-
-The original notebooks in `originals/` are untouched; the revised notebooks are a review draft rather than a verified reproduction.
