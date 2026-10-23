@@ -7,6 +7,32 @@ This repository contains Jupyter notebooks developed for the analysis of nanopar
 The analytical workflows combine image-derived morphological features, single-cell profiling, statistical analysis, machine learning, proteomics, and physicochemical characterization of gold nanoparticles (AuNPs).
 
 The notebooks are organized into nine modules, covering data processing, feature extraction, classification, statistical analysis, and visualization.
+## Computational Environment and Installation
+
+All analyses were performed using Python within a dedicated Conda environment named `aunp_analysis`.
+
+The complete environment configuration, including package dependencies and versions, is provided in the `environment.yml` file.
+
+### Installation
+
+To recreate the environment, clone this repository and execute:
+
+```bash
+conda env create -f environment.yml
+conda activate aunp_analysis
+```
+
+### Running the Notebooks
+
+Open JupyterLab:
+
+```bash
+jupyter lab
+```
+
+Select the `aunp_analysis` Python environment as the notebook kernel.
+
+**Note:** Some dependencies may require platform-specific adjustments.
 
 ## Repository Structure
 
